@@ -3,19 +3,13 @@ import matplotlib.pyplot as plt
 plt.rcParams["figure.figsize"] = 12,11
 from matplotlib.animation import FuncAnimation
 from matplotlib import animation
-#5.97200e24 Kg
-# 382500 km
+
 G = 6.67e-11
-# 1 s orbit period = 2355466.58 REAL s orbit period
 R = float(input("Distance Separated (Kilometers): "))
 M = float(input("Mass of Celestial Body (Kilograms): "))
 v = np.sqrt(G*M/(R*1000))
 
-# for t in time:
-#     angle.append(v*t/R)
-#     for theta in angle:
-#         x = R*np.cos(angle)
-#         y = R*np.sin(angle)
+
 fig, ax = plt.subplots()
 moon, = ax.plot(0, R, marker = "o", markersize = 11, markeredgecolor = "silver", markerfacecolor = "lightslategray")
 earth = ax.plot(0, 0, marker = "o", markersize = 19, markeredgecolor="green", markerfacecolor="cornflowerblue")
