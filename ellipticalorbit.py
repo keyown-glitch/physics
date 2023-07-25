@@ -1,5 +1,4 @@
 import numpy as np
-import scipy.integrate as spi
 import matplotlib.pyplot as plt
 import random
 from matplotlib.animation import FuncAnimation
@@ -93,6 +92,6 @@ ani = FuncAnimation(fig, update, init_func=init, frames=np.linspace(-np.pi, np.p
 
 plt.plot(x, y, linestyle = 'dashed', linewidth = 0.1, color = 'black')
 writergif = animation.PillowWriter(fps=30)
-ani.save("moon.gif", writer=writergif)
+ani.save("Elliptical Orbit (Moon/Earth).gif", writer=writergif)
 
 plt.show()
