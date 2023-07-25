@@ -34,5 +34,5 @@ plt.grid()
 ani = FuncAnimation(fig, update, interval=10, blit=True, repeat=True,
                      frames=np.linspace(angle,5*angle,f, endpoint=False))
 writergif = animation.PillowWriter(fps=30)
-ani.save("pendul6.gif", writer = writergif)
+ani.save("Pendulum.gif", writer = writergif)
 plt.show()
