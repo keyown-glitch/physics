@@ -25,10 +25,8 @@ def orbit(o):
 plt.xlim(-R-100000, R+100000)
 plt.ylim(-R-100000, R+100000)
 plt.grid()
-# v = 2piR/T, T = 2355466.58*(frames + 1)/fps
-# 2piR/sqrtGM/R = 2355466.58*(frames + 1)/fps
-# 2piR*fps/(sqrtGM/R*2355466.58) = f + 1
-# 2piR*fps/(sqrtGM/R*2355466.58) - 1 = f
+
+
 f = round(120*np.pi*R*1000*30/(v*2355466.58) - 1)
 T = 2355466.58*(f + 1)/1800
 ani = FuncAnimation(fig, orbit, interval=10, blit=True, repeat=True,
@@ -37,5 +35,5 @@ ani = FuncAnimation(fig, orbit, interval=10, blit=True, repeat=True,
 print("Velocity =", v, "m/s")
 print("Orbital Period:", T/(86400), "Days")
 writergif = animation.PillowWriter(fps=30)
-ani.save("Earth+Moon4.gif", writer = writergif)
+ani.save("Circular Orbit (Moon/Earth.gif", writer = writergif)
 plt.show()
