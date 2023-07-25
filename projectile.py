@@ -1,11 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
-# v^2 = vy^2 + vx^2
-# 2vy/a = t
 v = float(input("Velocity: "))
 angle = int(input("Angle(Degrees): "))*np.pi/180
+
 vx = v*np.cos(angle)
 vy = v*np.sin(angle)
 b = 2*v*np.sin(angle)/9.8
