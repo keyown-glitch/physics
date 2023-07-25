@@ -1,8 +1,6 @@
-# This is a sample Python script.
 import numpy as np
 import matplotlib.pyplot as plt
-# x = Acos(2pi*f*t)
-# T = 2pisqrt(m/k)
+
 A = float(input("Distance Stretched:"))
 k = float(input("Spring Constant:"))
 m = float(input("Mass:"))
@@ -34,19 +32,6 @@ def F(t):
     else:
         t = int(input("try again t = "))
 
-
-F(t)
-
 plt.legend()
-
-
-# F = []
-# for position in x_value:
-#     F.append(k*position)
-# plt.plot(x_value, F, label = "Force")
-
-# print("x_value=", x_value)
-# print("time_value=", time_axis)
-
 
 plt.show()
